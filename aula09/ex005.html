@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de DOM</title>
+    <style>
+        body {
+            background: #80e2e2;
+            color: blue;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <p>Aqui vai o resultado</p>
+    <div id="msgid" class="msgclass">Clique em mim</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        var d = document.getElementById('msg')
+        p1.style.color = 'red'
+        corpo.style.background = 'azure'
+        
+        //document.write('Está escrito assim: ' + p1.innerText)
+        //d.style.background = 'white'
+        //d.innerText = 'Mudando através do JS'
+
+        var d1 = document.querySelector('div#msgid')
+        d1.style.background = 'azure'
+
+        var d2 = document.querySelector('div.msgclass')
+        d1.style.background = 'azure'
+        
+    </script>
+</body>
+</html>
