@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais JS</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro <input type="text" id="txtvel"> KM/H
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var txt = document.getElementById('txtvel') // .querySelector(input#txtvel)
+            var res = document.querySelector('div#res')
+            var vel = Number(txtvel.value)
+            res.innerHTML = `<p>Sua velocidade é de <strong>${vel} KM/H</strong></p>`
+            if (vel > 60){
+                res.innerHTML += `<p>Você foi <strong>multado!</strong>. </p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança. </p>`
+        }
+    </script>
+</body>
+</html>

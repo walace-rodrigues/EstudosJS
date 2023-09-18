@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaikokujin</title>
+</head>
+<body>
+    <h1>Você é um Gaikokujin ?</h1>
+    Digite seu país de origem <input type="text" id="txtres">
+    <input type="button" value="Testar" onclick="testar()">
+    <div id="res">
+
+    </div>
+    <script>
+        var res = document.querySelector('input#txtres')
+        var bra = 'brasil'
+        function testar(){
+            if (res == bra){
+                var resposta = document.querySelector('div#res')
+                resposta.innerHTML = 'Você é cria do Brasil'
+            }
+        }
+    </script>
+</body>
+</html>
