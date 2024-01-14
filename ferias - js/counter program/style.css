@@ -1,0 +1,39 @@
+main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container {
+   height: 300px;
+   width: 400px;
+   background-color: aliceblue;
+}
+
+.container .row {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 0 20px;
+}
+
+.container .row:first-child {
+   margin: 40px 0;
+}
+
+#labelCount {
+   font-size: 3rem;
+   color: black;
+   font-weight: bold;
+}
+
+.btn {
+   border-radius: 30px;
+   border: none;
+   background-color: antiquewhite;
+   padding: 10px;
+   font-size: 18px;
+}
+
+.btn:hover {
+   background-color: yellow;
+}
