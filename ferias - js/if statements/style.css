@@ -1,0 +1,35 @@
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #8e8e8e;
+}
+
+.main-container {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+   height: 300px;
+   width: 400px;
+   margin-top:100px;
+   background-color: aliceblue;
+   border-radius: 10px;
+}
+
+label {
+   margin-top: 60px;
+   font-size: 2rem;
+}
+
+#btnSubmit {
+   border-radius: 30px;
+   border: none;
+   padding: 10px;
+   background-color: #e3e3e3;
+   cursor: pointer;
+}
+
+#btnSubmit:hover {
+   background-color: yellow;
+}
