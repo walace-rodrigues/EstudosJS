@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Checked</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <div class="container">
+      <div class="container-sub">
+         <input type="checkbox" id="myCheckbox">
+         <label for="myCheckbox">Check</label>
+      </div>
+
+      <div class="container-all-items">
+         <div class="container-item">
+            <input type="radio" id="visaRadio" name="card">
+            <label for="visaBtn">Visa</label>
+         </div>
+         <div class="container-item">
+            <input type="radio" id="masterRadio" name="card">
+            <label for="masterBtn">Master Card</label>
+         </div>
+         <div class="container-item">
+            <input type="radio" id="nubankRadio" name="card">
+            <label for="nubankBtn">Nubank</label>
+         </div>
+      </div>
+      <button type="button" id="submitBtn">Submit</button>
+      <p id="response"></p>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
