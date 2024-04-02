@@ -1,6 +1,7 @@
 function fnCapitalizarNovo(colecao,atributo){
      if(typeof colecao[0] == 'object'){
-          var resultado = colecao.map(function(obj){
+          var resultado = colecao.map(
+               function(obj){
 
                var letraInicial = obj[atributo].charAt(0).toUpperCase();
                var restoTexto = obj[atributo].slice(1);

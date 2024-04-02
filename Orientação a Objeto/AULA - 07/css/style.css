@@ -1,0 +1,31 @@
+* {
+     padding: 0;
+     margin: 0;
+}
+
+
+html,
+body {
+     font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+     margin: 4rem 0;
+     text-transform: uppercase;
+     text-align: center;
+}
+
+.ingrediente {
+     align-items: center;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+     padding: 1rem 2rem;
+     display: flex;
+}
+
+.ingrediente img {
+     height: 5rem;
+}
+
+.ingrediente p {
+     padding-left: 2rem;
+}
