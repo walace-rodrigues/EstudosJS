@@ -72,9 +72,20 @@ console.log(teste4)
 
 // Some - verifica se existe pelo menos 1 condição correspondente e retorna boolean
 const teste5 = data.some((user)=>{
-     return user.active == false
+     return user.active === false
 })
 console.log(teste5)
 
 
-// Every -
+// Every - para ele retornar true, todos os itens dentro da condiçao tem que ser verdadeiros
+const teste6 = data.every((user)=>{
+     return user.active === true
+})
+console.log(teste5) // vai retornar false pq nem todos sao true
+
+
+// Reduce - da pra fazer a conta de todos os salarios por exemplo, reduzir e saber o total
+const teste7 = data.reduce((total, user)=>{
+     return total += user.salary
+},0)// esse 0 representa o valor do parametro 'total' inicial, o qual vai ser acrescido a cada contagem
+console.log(`O total dos salários é ${teste7}`)
