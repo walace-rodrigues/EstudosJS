@@ -16,13 +16,13 @@ class Carro {
     console.log('--------------------------')
   }
 
-  liga () {
+  ligar () {
     this.ligado = true
   }
-  desliga () {
+  desligar () {
     this.ligado = false
   }
-  ligaDesliga () {
+  ligarDesligar () {
 
     if (this.ligado == false){
       this.ligado = true
