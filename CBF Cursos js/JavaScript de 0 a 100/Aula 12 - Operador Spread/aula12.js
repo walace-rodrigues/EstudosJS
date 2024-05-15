@@ -8,4 +8,3 @@ objsSpread.forEach(element => {
 
 console.log(objsSpread)
 console.log(objs)
-
